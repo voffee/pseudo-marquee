@@ -37,6 +37,10 @@ body {
 
 .wrapper {
     position: relative;
+    border: 1px solid var(--dark-text-color);
+    width: 90%;
+    max-width: 900px;
+    margin-inline: auto;
 }
 
 .item {
@@ -44,4 +48,5 @@ body {
     width: 100px;
     background-color: red;
     position: absolute;
+    left: 950px;
 }
