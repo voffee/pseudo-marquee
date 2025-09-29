@@ -44,35 +44,50 @@ body {
     & .item {
     height: 100px;
     width: 100px;
-    background-color: red;
+    background-color: lightgray;
     position: absolute;
     left: 950px;
     }
 
     & .marquee1 {
-        animation: movement 5s ease-in-out infinite 1s;
+        animation: movement 6s linear infinite 1s;
     }
 
     & .marquee2 {
-        animation: movement 5s ease-in-out infinite 2s;
+        animation: movement 6s linear infinite 2s;
     }
 
     & .marquee3 {
-        animation: movement 5s ease-in-out infinite 3s;
+        animation: movement 6s linear infinite 3s;
     }
 
     & .marquee4 {
-        animation: movement 5s ease-in-out infinite 4s;
+        animation: movement 6s linear infinite 4s;
+    }
+
+    & .marquee5 {
+        animation: movement 6s linear infinite 5s;
+    }
+
+    & .marquee6 {
+        animation: movement 6s linear infinite 6s;
     }
 }
 
 /* Keyframes */
 @keyframes movement {
-    from {
+    0% {
         transform: translateX(0px);
+        opacity: 1;
     }
 
-    to {
+    80% {
+        transform: translateX(-880px);
+        opacity: 0.7;
+    }
+
+    100% {
         transform: translateX(-1100px);
+        opacity: 0;
     }
 }
