@@ -1,6 +1,5 @@
 
 /* Root Variables */
-
 :root {
     --ribbon-color: #ED2939;
 
@@ -41,12 +40,39 @@ body {
     width: 90%;
     max-width: 900px;
     margin-inline: auto;
-}
 
-.item {
+    & .item {
     height: 100px;
     width: 100px;
     background-color: red;
     position: absolute;
     left: 950px;
+    }
+
+    & .marquee1 {
+        animation: movement 5s ease-in-out infinite 1s;
+    }
+
+    & .marquee2 {
+        animation: movement 5s ease-in-out infinite 2s;
+    }
+
+    & .marquee3 {
+        animation: movement 5s ease-in-out infinite 3s;
+    }
+
+    & .marquee4 {
+        animation: movement 5s ease-in-out infinite 4s;
+    }
+}
+
+/* Keyframes */
+@keyframes movement {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(-1100px);
+    }
 }
