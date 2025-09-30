@@ -47,33 +47,33 @@ body {
     & .item {
     height: 100px;
     width: 100px;
-    background-color: lightgray;
+    background-color: transparent;
     position: absolute;
     left: 950px;
     }
 
     & .marquee1 {
-        animation: movement 6s linear infinite 1s;
+        animation: movement 6s linear infinite 0s;
     }
 
     & .marquee2 {
-        animation: movement 6s linear infinite 2s;
+        animation: movement 6s linear infinite 1s;
     }
 
     & .marquee3 {
-        animation: movement 6s linear infinite 3s;
+        animation: movement 6s linear infinite 2s;
     }
 
     & .marquee4 {
-        animation: movement 6s linear infinite 4s;
+        animation: movement 6s linear infinite 3s;
     }
 
     & .marquee5 {
-        animation: movement 6s linear infinite 5s;
+        animation: movement 6s linear infinite 4s;
     }
 
     & .marquee6 {
-        animation: movement 6s linear infinite 6s;
+        animation: movement 6s linear infinite 5s;
     }
 }
 
@@ -81,12 +81,18 @@ body {
 @keyframes movement {
     0% {
         transform: translateX(0px);
+        opacity: 0;
+    }
+
+    20% {
+        transform: translateX(-220px);
+        background-color: red;
         opacity: 1;
     }
 
     80% {
         transform: translateX(-880px);
-        opacity: 0.7;
+        opacity: 1;
     }
 
     100% {
